@@ -19,4 +19,4 @@ STOPSIGNAL SIGTERM
 COPY run.sh /run.sh
 CMD ["/run.sh"]
 
-RUN echo "Source: https://github.com/ypcs/docker-apache2\nBuild date: $(date +%Y-%m-%d\ %H:%M:%S)" >/README
+RUN echo "Source: https://github.com/ypcs/docker-apache2\nBuild date: $(date --iso-8601=ns)" >/README
