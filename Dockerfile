@@ -13,7 +13,6 @@ RUN \
     ln -sf /dev/stdout /var/log/apache2/access.log && \
     ln -sf /dev/stderr /var/log/apache2/error.log
 
-EXPOSE 80
 STOPSIGNAL SIGTERM
 
 COPY run.sh /run.sh
